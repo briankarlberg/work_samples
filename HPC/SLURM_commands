@@ -1,0 +1,9 @@
+# Command line ops
+
+# Check the queue for running jobs
+
+squeue -u karlberb. 
+
+# Cancel a job. 
+
+scancel <JOB_ID>

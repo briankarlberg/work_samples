@@ -2,8 +2,8 @@
 
 # Check the queue for running jobs
 
-squeue -u karlberb. 
+squeue -u karlberb
 
-# Cancel a job. 
+# Cancel a job
 
 scancel <JOB_ID>

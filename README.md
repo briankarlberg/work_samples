@@ -1,5 +1,5 @@
 # work_samples
-ML-based analysis of multi-comic cancer data
+ML-based analysis of multi-omic cancer data
 
 ## Topics
 HPC ops

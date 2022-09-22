@@ -1,8 +1,14 @@
 # Control setup, inspection, modificaton, and removal of Jupyter Lab kernels
+# Purpose is version control of Keras and TensorFlow
+# for inspecting models written in previous syntaxes
 
 Interactive effect of cenv, venv in sequence of kernel specification
 
-
-#### Show installed kernels
+# Show installed kernels
 jupyter kernelspec list
 
+# Remove kernel
+jupyter kernelspec uninstall kernel_name
+
+# Local vs system-wide kernels
+https://stackoverflow.com/questions/42635310/remove-kernel-on-jupyter-notebook

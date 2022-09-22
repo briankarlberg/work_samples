@@ -1,0 +1,8 @@
+# Control setup, inspection, modificaton, and removal of Jupyter Lab kernels
+
+Interactive effect of cenv, venv in sequence of kernel specification
+
+
+#### Show installed kernels
+jupyter kernelspec list
+

@@ -1,5 +1,7 @@
-tf.__version__  
+* to python interpretor:  
 
+tf.__version__  
+keras.__version__  
 
 
 

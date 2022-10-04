@@ -12,3 +12,14 @@ $ source dense_full_env_00/bin/activate
 
 # copy Python3 path
 /Users/karlberb/Desktop/RNB00978/sample_count/sample_gen/dense_layer/dense_full_env_00/bin/python3 -m ipykernel install --name 'dense_full_env_00'
+
+# Launch the IDE from command line pwd project root
+jupyter lab
+
+# or
+jupyter-lab
+
+# then choose 
+dense_full_env_00
+
+# from the UI kernel selector, import packages, begin model neural architechting

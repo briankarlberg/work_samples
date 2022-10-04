@@ -5,7 +5,7 @@ $ python3 -m venv dense_full_env_00
 $ source dense_full_env_00/bin/activate
 
 # put packages into venv
-(dense_full_env_00) bash-3.2$ pip3 install jupyterlab ipykernel matplotlib numpy tensorflow==2.10 keras sklearn pydot graphviz pandas
+(dense_full_env_00) bash-3.2$ pip3 install jupyterlab ipykernel matplotlib numpy tensorflow==2.10 keras sklearn pydot graphviz pandas umap
 
 # Get the Python3 path
 (dense_full_env_00) bash-3.2$ which python3

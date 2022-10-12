@@ -3,3 +3,83 @@ Authored step-by-step Wiki post on head node set up for tunneling
 (behind OHSU firewall)
 
 https://wiki.ohsu.edu/display/HACIIAPCS/2022/09/19/JupyterLab+on+Exacloud
+
+Full method, wiki copy, interactive session with Jupyter Lab on Exacloud
+
+Created by Brian Karlberg
+karlberb@ohsu.edu
+
+Step one:
+ssh into Exacloud, navigate to project root and create directories:
+
+$ ssh<ohsu_user_name>@exahead1.ohsu.edu
+In this example the project root directory is home/groups/<MyLab>/sample_count
+
+$ cd home/groups/<MyLab>/sample_count
+ 
+$ mkdir output_reports
+$ mkdir error_reports
+
+Step one point five:
+
+Check python version:
+
+$ python --version
+Python 2.7.5
+
+Step two:
+
+Create and activate Python3 venv in project root; install jupyterlab via:
+$ python -m venv j_lab_ven
+$ python -m virtualvenv j_lab_venv
+
+$ /home/exacloud/software/python/3.10.4/bin/python3 -m venv /home/groups/EllrottLab/sample_count/j_lab_py3_env
+# the -m option refers to PEP, not necessary to understand / modify
+# insert user-defined venv name in place of <j_lab_venv>
+# skip to activate if already created
+
+$ source j_lab_py3_env/bin/activate
+
+(<j_lab_venv>) $ pip install jupyterlab
+# skip if already installed
+
+Step two point five:
+
+Verify JupyterLab install
+
+(j_lab_py3_env) [karlberb@exahead1 sample_count]$ jupyter --version
+IPython          : 8.5.0
+ipykernel        : 6.15.3
+ipywidgets       : not installed
+jupyter_client   : 7.3.5
+jupyter_core     : 4.11.1
+jupyter_server   : 1.18.1
+jupyterlab       : 3.4.7
+nbclient         : 0.6.8
+nbconvert        : 7.0.0
+nbformat         : 5.5.0
+notebook         : 6.4.12
+qtconsole        : not installed
+traitlets        : 5.4.0
+
+Step three:
+Create shell script called something like j_lab_out_log.sh with nano:
+
+Step four:
+Run the shell script with sbatch command:
+
+sbatch j_lab_out_log.sh
+
+Step five:
+cat the output report to get login URL: 
+$ ssh ohsu_user_name@exahead1.ohsu.edu -L 8721:exanode-8-19:8721
+paste into fresh terminal and log in
+
+Step six:
+Get the second URL from the error report
+Paste into fresh browser tab
+
+Step seven:
+Install TensorFlow, begin analysis
+Alternate method:
+https://github.com/jdrusso/ray_distributed/blob/main/jupyter.slurm

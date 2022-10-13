@@ -63,6 +63,8 @@ traitlets        : 5.4.0
 Step three:
 Create shell script called something like j_lab_out_log.sh with nano:
 
+in HPC_TensorFlow_IDE
+
 Step four:
 Run the shell script with sbatch command:
 

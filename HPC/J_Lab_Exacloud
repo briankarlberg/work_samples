@@ -28,10 +28,11 @@ Python 2.7.5
 Step two:
 
 Create and activate Python3 venv in project root; install jupyterlab via:
-$ python -m venv j_lab_ven
-$ python -m virtualvenv j_lab_venv
 
-$ /home/exacloud/software/python/3.10.4/bin/python3 -m venv /home/groups/EllrottLab/sample_count/j_lab_py3_env
+/home/exacloud/software/python/3.10.4/bin/python3 -m venv /home/groups/EllrottLab/sample_count/j_lab_py3_env
+
+/home/exacloud/software/python/3.10.4/bin/python3 -m venv /home/groups/EllrottLab/sample_count/synthetic_TCGA_data_gen/j_lab_py3_env
+
 # the -m option refers to PEP, not necessary to understand / modify
 # insert user-defined venv name in place of <j_lab_venv>
 # skip to activate if already created

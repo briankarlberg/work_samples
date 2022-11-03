@@ -1,0 +1,47 @@
+Create, launch, and test M1_cenv on local machine
+2022-11-03
+
+From:
+https://pub.towardsai.net/installing-tensorflow-on-mac-m1-pro-m1-max-2af765243eaa
+
+xcode-select --install
+xcode-select: error: command line tools are already installed, use "Software Update" to install updates
+
+https://github.com/conda-forge/miniforge (from URL above)
+  moved Miniforge3-MacOSX-arm64.sh from to Documents/work/sample_count/synthetic_TCGA_data_gen
+  
+RNB11212:synthetic_TCGA_data_gen karlberb$ bash Miniforge3-MacOSX-arm64.sh
+
+Miniforge3 will now be installed into this location:
+/Users/karlberb/miniforge3
+
+Do you wish the installer to initialize Miniforge3
+by running conda init? [yes|no]
+  yes
+  
+==> For changes to take effect, close and re-open your current shell. <==
+
+If you'd prefer that conda's base environment not be activated on startup, 
+   set the auto_activate_base parameter to false: 
+
+conda config --set auto_activate_base false
+
+Thank you for installing Miniforge3!
+
+* close and reopen shell
+
+cd Documents/work/sample_count/synthetic_TCGA_data_gen
+
+conda create --name tf_M1_py3dot9 python=3.9
+
+(base) RNB11212:synthetic_TCGA_data_gen karlberb$ conda activate tf_M1_py3dot9
+
+conda install -c apple tensorflow-deps
+pip install tensorflow-macos
+pip install tensorflow-metal
+
+conda install -c conda-forge jupyter jupyterlab
+
+(tf_M1_py3dot9) RNB11212:synthetic_TCGA_data_gen karlberb$ jupyter-lab
+
+done, MNIST test worked per towardsai.net example

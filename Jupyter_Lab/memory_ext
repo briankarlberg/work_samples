@@ -1,1 +1,3 @@
 pip install jupyter-resource-usage
+
+jupyter-lab --ResourceUseDisplay.mem_limit

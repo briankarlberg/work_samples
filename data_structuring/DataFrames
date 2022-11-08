@@ -1,0 +1,2 @@
+# Split column on character
+stacked.Labels.str.split('_').str[0]

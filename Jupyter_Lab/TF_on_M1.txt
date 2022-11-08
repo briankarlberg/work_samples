@@ -30,17 +30,19 @@ Thank you for installing Miniforge3!
 
 * close and reopen shell
 
-cd Documents/work/sample_count/synthetic_TCGA_data_gen
+$ cd Documents/work/sample_count/synthetic_TCGA_data_gen
 
-conda create --name tf_M1_py3dot9 python=3.9
+$ conda create --name tf_M1_py3dot9 python=3.9
+
+$ conda info --envs
 
 (base) RNB11212:synthetic_TCGA_data_gen karlberb$ conda activate tf_M1_py3dot9
 
-conda install -c apple tensorflow-deps
-pip install tensorflow-macos
-pip install tensorflow-metal
+$ conda install -c apple tensorflow-deps
+$ pip install tensorflow-macos
+$ pip install tensorflow-metal
 
-conda install -c conda-forge jupyter jupyterlab
+$ conda install -c conda-forge jupyter jupyterlab
 
 (tf_M1_py3dot9) RNB11212:synthetic_TCGA_data_gen karlberb$ jupyter-lab
 

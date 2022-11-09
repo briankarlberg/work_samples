@@ -1,2 +1,5 @@
 # Split column on character
 stacked.Labels.str.split('_').str[0]
+
+# Flip a boolean with a tilde
+brca_drop = stacked[~stacked.Labels.isin(['BRCA_1','BRCA_2','BRCA_3','BRCA_4'])] # tilde ftw

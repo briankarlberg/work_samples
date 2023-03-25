@@ -83,6 +83,9 @@ This will launch Jupyter Lab in your default web browser.
 Once Jupyter Lab has launched, click on the "New" dropdown menu in the top-right corner and select "R" to create a new R notebook.
 You should now be able to use R 4.2 in your Jupyter Lab environment.
 That's it! You have now successfully created and launched a virtual environment for Jupyter Lab on Apple M1 with an R 4.2 kernel installed.
+---
+#> 127   4.2.0 2022-04-22 07:05:41    Vigorous Calisthenics
+---
 
 
 

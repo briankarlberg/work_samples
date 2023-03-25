@@ -1,0 +1,90 @@
+https://bioconductor.org/packages/release/bioc/html/PharmacoGx.html
+
+R version 4.2 - build env - 
+
+with R 4.2.2 in tf_M1_pydot3 env:
+
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("PharmacoGx") <fail>
+---
+browseVignettes("PharmacoGx")
+
+*running ?functionName in the R terminal
+---
+help() function
+---
+Bard prompt/output
+Sure, here are the steps on how to create and launch a virtual environment for Jupyter Lab on Apple M1 with an R 4.2 kernel installed:
+
+Install the Homebrew package manager.
+Run the following command to install the virtualenv package:
+brew install virtualenv
+
+Create a new virtual environment:
+virtualenv -p ~/.virtualenvs/r42 my_env
+
+Activate the virtual environment:
+source my_env/bin/activate
+
+Install the Jupyter Lab package:
+pip install jupyterlab
+
+Launch Jupyter Lab:
+jupyter lab
+
+In the Jupyter Lab interface, create a new notebook and select the R kernel.
+
+Write and run the following code in the notebook:
+
+install.packages("ggplot2")
+library(ggplot2)
+
+ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width)) + geom_point() + geom_smooth()
+The output of the code should be a graph of the iris data set.
+
+Congratulations, you have successfully created and launched a virtual environment for Jupyter Lab on Apple M1 with an R 4.2 kernel installed!
+
+Here are some additional tips:
+
+You can create multiple virtual environments with different R kernels.
+You can also install other packages into your virtual environments.
+To deactivate a virtual environment, run the following command:
+deactivate
+
+To remove a virtual environment, run the following command:
+rm -r ~/.virtualenvs/r42
+---
+GPT4 prompt/output:
+Please write comprehensive instructions for creating and launching a virtual environment for Jupyter Lab on Apple M1 with an R 4.2 kernel installed
+Sure, here are the step-by-step instructions for creating and launching a virtual environment for Jupyter Lab on Apple M1 with an R 4.2 kernel installed:
+
+Open a Terminal window on your Apple M1 computer.
+Install Homebrew package manager by running the following command:
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+Once Homebrew is installed, update it by running:
+brew update
+Install Miniforge, a lightweight distribution of the Conda package manager, by running:
+brew install miniforge
+Create a new Conda environment by running the following command, replacing myenv with the desired name of your environment:
+conda create --name myenv
+Activate the environment by running:
+conda activate myenv
+Install Jupyter Lab and the R kernel by running the following commands:
+conda install -c conda-forge jupyterlab
+conda install -c r r-irkernel
+Verify that the R kernel has been installed by running:
+jupyter kernelspec list
+This should display a list of available kernels, including the R kernel.
+Launch Jupyter Lab by running:
+jupyter lab
+This will launch Jupyter Lab in your default web browser.
+Once Jupyter Lab has launched, click on the "New" dropdown menu in the top-right corner and select "R" to create a new R notebook.
+You should now be able to use R 4.2 in your Jupyter Lab environment.
+That's it! You have now successfully created and launched a virtual environment for Jupyter Lab on Apple M1 with an R 4.2 kernel installed.
+
+
+
+
+

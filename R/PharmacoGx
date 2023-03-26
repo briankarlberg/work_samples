@@ -87,7 +87,13 @@ That's it! You have now successfully created and launched a virtual environment 
 #> 127   4.2.0 2022-04-22 07:05:41    Vigorous Calisthenics
 ---
 
+conda create --name pharmacogx42 python=3.11 R=4.2
+conda create --name env_name python=3.7 R=3.6
+conda activate pharmacogx42
+conda install -c r r-irkernel
+jupyter kernelspec list
 
+<fail again> try next with hard spec on second decimal 4.2.0
 
 
 

@@ -95,5 +95,5 @@ jupyter kernelspec list
 
 <fail again> try next with hard spec on second decimal 4.2.0
 
-
+sessionInfo()
 

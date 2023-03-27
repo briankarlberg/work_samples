@@ -96,4 +96,46 @@ jupyter kernelspec list
 <fail again> try next with hard spec on second decimal 4.2.0
 
 sessionInfo()
+----
+2023-03-26
+In native MacOS terminal navigate to:
+/Users/karlberb/Documents/work/CANDLE
+The forked and cloned and repo is in:
+candleDataProcessing
+Figure out how to pull updates without losing exploratory code
+Probably put code files in an ignored dir i.e. <devel>
+
+conda create --name phrm_point0 python=3.11 R=4.2.0
+conda activate phrm_point0
+conda install -c r r-irkernel
+jupyter kernelspec list
+jupyter lab
+------
+end error debug session
+reamaing dependency errors:
+The downloaded source packages are in
+	‘/private/var/folders/5v/88tvwqd94gs4dfr3h6rt1_w0qd13bg/T/Rtmpz5Wt4a/downloaded_packages’
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ... done
+Warning messages:
+1: In install.packages(...) :
+  installation of package ‘slam’ had non-zero exit status
+2: In install.packages(...) :
+  installation of package ‘sm’ had non-zero exit status
+3: In install.packages(...) :
+  installation of package ‘coop’ had non-zero exit status
+4: In install.packages(...) :
+  installation of package ‘igraph’ had non-zero exit status
+5: In install.packages(...) :
+  installation of package ‘relations’ had non-zero exit status
+6: In install.packages(...) :
+  installation of package ‘magicaxis’ had non-zero exit status
+7: In install.packages(...) :
+  installation of package ‘piano’ had non-zero exit status
+8: In install.packages(...) :
+  installation of package ‘CoreGx’ had non-zero exit status
+9: In install.packages(...) :
+  installation of package ‘PharmacoGx’ had non-zero exit status
+> install.packages('slam')
+---------
 

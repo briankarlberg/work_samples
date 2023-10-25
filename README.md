@@ -1,5 +1,8 @@
 # work_samples
-ML-based analysis of multi-omic cancer data
+ML-based analysis of multi-omic cancer data  
+
+Code for synthetic sample generation manuscript:
+  https://github.com/ohsu-comp-bio/synthesis
 
 ## Topics  
 HPC ops  

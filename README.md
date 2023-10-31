@@ -2,7 +2,10 @@
 ML-based analysis of multi-omic cancer data  
 
 Code for synthetic sample generation manuscript:
-  https://github.com/ohsu-comp-bio/synthesis
+  https://github.com/ohsu-comp-bio/synthesis  
+
+VAE for cell line to human omics platfrom correction:  
+  https://github.com/PNNL-CompBio/panCancerModelSystems
 
 ## Topics  
 HPC ops  

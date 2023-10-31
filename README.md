@@ -4,7 +4,7 @@ ML-based analysis of multi-omic cancer data
 Code for synthetic sample generation manuscript:  
   https://github.com/ohsu-comp-bio/synthesis  
 
-VAE for cell line to human omics platfrom correction:  
+VAE for cell line to human omics platform correction:  
   https://github.com/PNNL-CompBio/panCancerModelSystems
 
 ## Topics  
@@ -18,4 +18,7 @@ DNN general
 VAE  
 Transformers  
 Reinforcement learning  
-Plotting  
+Plotting/figures  
+  Matplotlib  
+  Seaborn
+  Inkscape

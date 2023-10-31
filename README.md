@@ -1,7 +1,7 @@
 # work_samples
 ML-based analysis of multi-omic cancer data  
 
-Code for synthetic sample generation manuscript:
+Code for synthetic sample generation manuscript:  
   https://github.com/ohsu-comp-bio/synthesis  
 
 VAE for cell line to human omics platfrom correction:  

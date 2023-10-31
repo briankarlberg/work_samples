@@ -4,6 +4,7 @@ ML-based analysis of multi-omic cancer data
 Code for synthetic sample generation manuscript:  
   https://github.com/ohsu-comp-bio/synthesis  
 
+Transformer-based cancer type prediction,  
 VAE for cell line to human omics platform correction:  
   https://github.com/PNNL-CompBio/panCancerModelSystems
 

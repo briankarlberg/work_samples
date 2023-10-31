@@ -20,6 +20,6 @@ VAE
 Transformers  
 Reinforcement learning  
 Plotting/figures  
-  Matplotlib  
-  Seaborn
-  Inkscape
+* Matplotlib  
+* Seaborn  
+* Inkscape
